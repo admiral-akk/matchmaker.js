@@ -1,9 +1,9 @@
-import express from "express.js";
+import express from "express";
 import { createServer } from "node:http.js";
 import { fileURLToPath } from "node:url.js";
 import { dirname, join } from "node:path.js";
-import { Server } from "socket.io.js";
-import { v4 as uuidv4 } from "uuid.js";
+import { Server } from "socket.io";
+import { v4 as uuidv4 } from "uuid";
 
 const app = express();
 const server = createServer(app);
